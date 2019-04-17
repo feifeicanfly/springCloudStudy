@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: debug
+---
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: server1
+  client:
+    service-url:
+      defaultZone: http://server2:8762/eureka # 设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。
+spring:
+  application:
+    name: microservice-discovery-eureka-ha1
+  profiles: debug
+
+---
+server:
+  port: 8762
+eureka:
+  instance:
+    hostname: server2
+  client:
+    service-url:
+      defaultZone: http://server1:8761/eureka # 设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。
+spring:
+  application:
+    name: microservice-discovery-eureka-ha2
+    profiles: dev
