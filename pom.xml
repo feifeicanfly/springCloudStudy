@@ -13,6 +13,7 @@
         <module>microservice-simple-consumer-movie</module>
         <module>microservice-eureka-server</module>
         <module>microservice-eureka-server-ha</module>
+        <module>microservice-simple-consumer-ribbon</module>
     </modules>
 
 
