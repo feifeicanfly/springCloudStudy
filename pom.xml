@@ -10,10 +10,12 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>microservice-simple-provider-user</module>
+        <module>microservice-simple-provider-user2</module>
         <module>microservice-simple-consumer-movie</module>
         <module>microservice-eureka-server</module>
         <module>microservice-eureka-server-ha</module>
         <module>microservice-simple-consumer-ribbon</module>
+        <module>microservice-simple-consumer-ribbon-config-java</module>
     </modules>
 
 
