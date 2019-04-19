@@ -16,6 +16,8 @@
         <module>microservice-eureka-server-ha</module>
         <module>microservice-simple-consumer-ribbon</module>
         <module>microservice-simple-consumer-ribbon-config-java</module>
+        <module>microservice-simple-consumer-openfeign</module>
+        <module>microservice-simple-consumer-feign-config-java</module>
     </modules>
 
 
