@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservice-eureka-server/microservice-eureka-server.iml" filepath="$PROJECT_DIR$/microservice-eureka-server/microservice-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-eureka-server-ha/microservice-eureka-server-ha.iml" filepath="$PROJECT_DIR$/microservice-eureka-server-ha/microservice-eureka-server-ha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-consumer-feign-config-java/microservice-simple-consumer-feign-config-java.iml" filepath="$PROJECT_DIR$/microservice-simple-consumer-feign-config-java/microservice-simple-consumer-feign-config-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-consumer-feign-config-properties/microservice-simple-consumer-feign-config-properties.iml" filepath="$PROJECT_DIR$/microservice-simple-consumer-feign-config-properties/microservice-simple-consumer-feign-config-properties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-consumer-movie/microservice-simple-consumer-movie.iml" filepath="$PROJECT_DIR$/microservice-simple-consumer-movie/microservice-simple-consumer-movie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-consumer-openfeign/microservice-simple-consumer-openfeign.iml" filepath="$PROJECT_DIR$/microservice-simple-consumer-openfeign/microservice-simple-consumer-openfeign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-consumer-ribbon/microservice-simple-consumer-ribbon.iml" filepath="$PROJECT_DIR$/microservice-simple-consumer-ribbon/microservice-simple-consumer-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-consumer-ribbon-config-java/microservice-simple-consumer-ribbon-config-java.iml" filepath="$PROJECT_DIR$/microservice-simple-consumer-ribbon-config-java/microservice-simple-consumer-ribbon-config-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-provider-user/microservice-simple-provider-user.iml" filepath="$PROJECT_DIR$/microservice-simple-provider-user/microservice-simple-provider-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-simple-provider-user2/microservice-simple-provider-user2.iml" filepath="$PROJECT_DIR$/microservice-simple-provider-user2/microservice-simple-provider-user2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-follow-me.iml" filepath="$PROJECT_DIR$/spring-cloud-follow-me.iml" />
+    </modules>
+  </component>
+</project>

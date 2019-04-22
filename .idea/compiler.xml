@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservice-eureka-server" />
+        <module name="microservice-eureka-server-ha" />
+        <module name="microservice-simple-consumer-feign-config-java" />
+        <module name="microservice-simple-consumer-feign-config-properties" />
+        <module name="microservice-simple-consumer-movie" />
+        <module name="microservice-simple-consumer-openfeign" />
+        <module name="microservice-simple-consumer-ribbon" />
+        <module name="microservice-simple-consumer-ribbon-config-java" />
+        <module name="microservice-simple-provider-user" />
+        <module name="microservice-simple-provider-user2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microservice-eureka-server" target="1.8" />
+      <module name="microservice-eureka-server-ha" target="1.8" />
+      <module name="microservice-simple-consumer-feign-config-java" target="1.8" />
+      <module name="microservice-simple-consumer-feign-config-properties" target="1.8" />
+      <module name="microservice-simple-consumer-movie" target="1.8" />
+      <module name="microservice-simple-consumer-openfeign" target="1.8" />
+      <module name="microservice-simple-consumer-ribbon" target="1.8" />
+      <module name="microservice-simple-consumer-ribbon-config-java" target="1.8" />
+      <module name="microservice-simple-provider-user" target="1.8" />
+      <module name="microservice-simple-provider-user2" target="1.8" />
+      <module name="spring-cloud-follow-me" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="microservice-eureka-server" options="-parameters" />
+      <module name="microservice-eureka-server-ha" options="-parameters" />
+      <module name="microservice-simple-consumer-feign-config-java" options="-parameters" />
+      <module name="microservice-simple-consumer-feign-config-properties" options="-parameters" />
+      <module name="microservice-simple-consumer-movie" options="-parameters" />
+      <module name="microservice-simple-consumer-openfeign" options="-parameters" />
+      <module name="microservice-simple-consumer-ribbon" options="-parameters" />
+      <module name="microservice-simple-consumer-ribbon-config-java" options="-parameters" />
+      <module name="microservice-simple-provider-user" options="-parameters" />
+      <module name="microservice-simple-provider-user2" options="-parameters" />
+    </option>
+  </component>
+</project>

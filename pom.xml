@@ -18,6 +18,7 @@
         <module>microservice-simple-consumer-ribbon-config-java</module>
         <module>microservice-simple-consumer-openfeign</module>
         <module>microservice-simple-consumer-feign-config-java</module>
+        <module>microservice-simple-consumer-feign-config-properties</module>
     </modules>
 
 
