@@ -4,13 +4,27 @@ import com.itmuch.com.entity.User;
 import feign.Logger;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @FeignClient(name = "microservice-provider-user", configuration = UserFeignConfig.class)
 public interface UserFeignClient {
   @GetMapping("/users/{id}")
   User findById(@PathVariable("id") Long id);
+
+  // 该请求不会成功
+  @RequestMapping(value = "/get", method = RequestMethod.GET)
+  public User get0(User user);
+
+  @RequestMapping(value = "/get", method = RequestMethod.GET)
+  public User get1(@RequestParam("id") Long id, @RequestParam("username") String username);
+
+  @RequestMapping(value = "/get", method = RequestMethod.GET)
+  public User get2(@RequestParam Map<String, Object> map);
+
+  @RequestMapping(value = "/post", method = RequestMethod.POST)
+  public User post(@RequestBody User user);
 }
 
 /**
