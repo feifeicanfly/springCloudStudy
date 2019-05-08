@@ -1,0 +1,22 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.gitignore
+.idea/
+microservice-eureka-server-ha/microservice-eureka-server-ha.iml
+microservice-eureka-server/microservice-eureka-server.iml
+microservice-simple-consumer-feign-config-java/microservice-simple-consumer-feign-config-java.iml
+microservice-simple-consumer-feign-config-properties/microservice-simple-consumer-feign-config-properties.iml
+microservice-simple-consumer-movie/microservice-simple-consumer-movie.iml
+microservice-simple-consumer-openfeign/microservice-simple-consumer-openfeign.iml
+microservice-simple-consumer-ribbon-config-java/microservice-simple-consumer-ribbon-config-java.iml
+microservice-simple-consumer-ribbon/microservice-simple-consumer-ribbon.iml
+microservice-simple-provider-user/microservice-simple-provider-user.iml
+microservice-simple-provider-user2/microservice-simple-provider-user2.iml
+spring-cloud-follow-me.iml
