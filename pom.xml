@@ -19,6 +19,7 @@
         <module>microservice-simple-consumer-openfeign</module>
         <module>microservice-simple-consumer-feign-config-java</module>
         <module>microservice-simple-consumer-feign-config-properties</module>
+        <module>microservice-simple-consumer-movie-ribbon-hystrix-common</module>
     </modules>
 
 
