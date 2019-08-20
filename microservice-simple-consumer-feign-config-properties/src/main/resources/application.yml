@@ -30,3 +30,7 @@ feign:
 logging:
   level:
     com.itmuch.com.feign.UserFeignClient: debug
+#属性配置的方式指定ribbon的复制均衡策略
+microservice-provider-user:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

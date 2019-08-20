@@ -1,16 +1,22 @@
 package com.itmuch.com.feign;
 
 import com.itmuch.com.entity.User;
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
 import feign.Logger;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @FeignClient(name = "microservice-provider-user", configuration = UserFeignConfig.class)
 public interface UserFeignClient {
   @GetMapping("/users/{id}")
   User findById(@PathVariable("id") Long id);
+
+  @PostMapping("/users/getUserName")
+  String getUserName(User user);
 }
 
 /**
@@ -24,5 +30,11 @@ class UserFeignConfig {
   @Bean
   public Logger.Level logger() {
     return Logger.Level.FULL;
+  }
+
+  @Bean
+  public IRule ribbonRule() {
+    // 负载均衡规则，改为随机
+    return new RandomRule();
   }
 }
