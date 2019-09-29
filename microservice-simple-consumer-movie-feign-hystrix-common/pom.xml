@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.itmuch.cloud</groupId>
-    <artifactId>microservice-simple-consumer-movie-ribbon-hystrix-common</artifactId>
+    <artifactId>microservice-simple-consumer-movie-feign-hystrix-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -39,7 +39,8 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-        <!-- feign 声明式、模板化的HTTP客户端(通用方式使用Hystrix)-->
+        <!-- 通用方式使用Hystrix -->
+        <!-- feign 声明式、模板化的HTTP客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>

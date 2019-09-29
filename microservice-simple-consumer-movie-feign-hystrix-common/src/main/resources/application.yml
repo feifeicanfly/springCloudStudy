@@ -15,7 +15,7 @@ management:
 spring:
   application:
       # 指定注册到eureka server上的服务名称，对于电影微服务，本系列将名称设为microservice-consumer-movie
-      name: microservice-simple-consumer-movie-ribbon-hystrix-common
+      name: microservice-simple-consumer-movie-feign-hystrix-common
   eureka:
     client:
       service-url:
