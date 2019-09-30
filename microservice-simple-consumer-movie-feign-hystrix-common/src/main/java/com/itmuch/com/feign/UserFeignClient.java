@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.math.BigDecimal;
 
@@ -23,8 +22,8 @@ public interface UserFeignClient {
   @GetMapping("/users/{id}")
   User findById(@PathVariable("id") Long id);
 
-  @PostMapping("/users/getUserName")
-  String getUserName(User user);
+  /*  @PostMapping("/users/getUserName")
+  String getUserName(User user);*/
 }
 
 /**
@@ -57,12 +56,6 @@ class UserFeignClientFallbackFactory implements FallbackFactory<UserFeignClient>
       public User findById(Long id) {
         log.error("进入回退逻辑", throwable);
         return new User(id, "默认用户", "默认用户", 0, new BigDecimal(1));
-      }
-
-      @Override
-      public String getUserName(Long id) {
-        log.error("进入回退逻辑2", throwable);
-        return "默认用户2";
       }
     };
   }
