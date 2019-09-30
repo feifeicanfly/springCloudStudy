@@ -1,0 +1,60 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: microservice-gateway-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+#Zuul 路由配置
+#1.自定义指定微服务的访问路径
+#zuul:
+#  routes:
+#    microservice-provider-user: /user/**
+
+#2.忽略指定微服务
+#zuul:
+#  ignored-services: microservice-provider-user,microservice-provider-movie
+
+#3.忽略所有微服务，只路由指定的微服务
+#zuul:
+#  ignored-services: '*'   # 使用'*'可忽略所有微服务
+#  routes:
+#    microservice-provider-user: /user/**
+
+#4.同时指定微服务的serviceId和对应路径
+#zuul:
+#  routes:
+#    user-route:                   # 该配置方式中，user-route只是给路由一个名称，可以任意起名。
+#      service-id: microservice-provider-user
+#      path: /user/**              # service-id对应的路径
+
+#5.同时指定path和URL
+#zuul:
+#  routes:
+#    user-route:                   # 该配置方式中，user-route只是给路由一个名称，可以任意起名。
+#      url: http://localhost:8000/ # 指定的url
+#      path: /user/**              # url对应的路径。
+
+#6.同时指定path和URL，并且不破坏Zuul的Hystrix、Ribbon特性。
+
+#8.路由前缀
+zuul:
+  prefix: /api
+  strip-prefix: false
+  routes:
+    microservice-provider-user: /user/**
+
+logging:
+  level:
+    com.netflix: DEBUG
