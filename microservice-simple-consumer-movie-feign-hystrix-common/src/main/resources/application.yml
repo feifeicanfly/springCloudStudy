@@ -29,3 +29,8 @@ spring:
 feign:
   hystrix:
     enabled: true
+
+turbine:
+  # 要监控的微服务列表，多个用,分隔
+  appConfig: microservice-simple-consumer-movie-feign-hystrix-common
+  clusterNameExpression: "'default'"
