@@ -1,0 +1,21 @@
+server:
+  port: 8041
+spring:
+  application:
+    name: microservice-gateway-zuul-filter
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.netflix: DEBUG

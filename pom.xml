@@ -21,5 +21,6 @@
         <module>microservice-simple-consumer-feign-config-properties</module>
         <module>microservice-simple-consumer-movie-ribbon-hystrix-common</module>
         <module>microservice-simple-gateway-zuul</module>
+        <module>microservice-simple-gateway-zuul-filter</module>
     </modules>
 </project>
