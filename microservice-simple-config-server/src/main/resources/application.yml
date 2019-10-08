@@ -1,0 +1,17 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          # Git仓库地址
+          #uri: https://git.oschina.net/itmuch/spring-cloud-config-repo.git
+          uri: https://github.com/feifeicanfly/RemoteConfig.git
+          # Git仓库账号
+          username:
+          # Git仓库密码
+          password:

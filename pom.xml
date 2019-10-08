@@ -22,5 +22,7 @@
         <module>microservice-simple-consumer-movie-ribbon-hystrix-common</module>
         <module>microservice-simple-gateway-zuul</module>
         <module>microservice-simple-gateway-zuul-filter</module>
+        <module>microservice-simple-config-server</module>
+        <module>microservice-simple-config-client</module>
     </modules>
 </project>
