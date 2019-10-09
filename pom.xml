@@ -24,5 +24,6 @@
         <module>microservice-simple-gateway-zuul-filter</module>
         <module>microservice-simple-config-server</module>
         <module>microservice-simple-config-client</module>
+        <module>microservice-simple-config-client-refresh-cloud-bus</module>
     </modules>
 </project>
