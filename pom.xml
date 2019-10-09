@@ -26,5 +26,6 @@
         <module>microservice-simple-config-client</module>
         <module>microservice-simple-config-client-refresh-cloud-bus</module>
         <module>microservice-simple-provider-user-sleuth</module>
+        <module>alibaba-microservice-simple-provider-user</module>
     </modules>
 </project>
