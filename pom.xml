@@ -25,5 +25,6 @@
         <module>microservice-simple-config-server</module>
         <module>microservice-simple-config-client</module>
         <module>microservice-simple-config-client-refresh-cloud-bus</module>
+        <module>microservice-simple-provider-user-sleuth</module>
     </modules>
 </project>
